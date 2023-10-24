@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background:#CCC;
+        width:300px;
+        margin:0 auto;
+        margin-top:100px;
+    }
+    .contener{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        background: white;
+        width: 720px;
+        height: 480px;
+    }
+    .circle {
+        transform: rotate(124deg);
+        width: 240px;
+        height: 240px;
+        background: #CD2E3A;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .circle .yin,
+    .circle .yang {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .circle .yin {
+        background: #0047A0;
+    }
+
+    .circle .yang {
+        background: #CD2E3A;
+        margin-top: -124px;
+        position: absolute;
+        margin-left: 60px;
+    }
+
+    .feher {
+        width: 120px;
+        height: 240px;
+        background: #0047A0;
+        display: inline-block;
+        margin-top: -120px;
+        border-top-right-radius: 120px;
+        border-bottom-right-radius: 120px;
+    }
+    .barreContener{
+        display: flex;
+    }
+    .barre{
+        background: black;
+        margin-bottom:10px;
+        width: 60px;
+        height: 20px;
+    }
+    .water, .fire, .wind, .earth{
+        position: absolute;
+    }
+    .water{
+        top: 70px;
+        left: 113px;
+    }
+    .fire{
+        bottom: 73px;
+        right: 119px;
+    }
+    .wind{
+        bottom: 74px;
+        left: 120px;
+    }
+    .earth{
+        top: 70px;
+        right: 110px;
+    }
+
+    .water{
+        transform: rotate(124deg);
+    }
+    .fire{
+        transform: rotate(124deg);
+    }
+    .wind{
+        transform: rotate(236deg);
+    }
+    .earth{
+        transform: rotate(236deg);
+    }
+    .fire .barre{
+        margin-right: 10px;
+        width: 50px;
+    }
+    .wind .barreContener:nth-child(2) .barre:nth-child(1){
+        margin-right: 10px;
+        width: 55px;
+    }
+    .wind .barreContener:nth-child(2) .barre:nth-child(2){
+        width: 55px;
+    }
+    .fire .barreContener .barre{
+        width: 55px;
+    }
+
+    .earth .barreContener:nth-child(1) .barre:nth-child(1), .earth .barreContener:nth-child(3) .barre:nth-child(1){
+        margin-right: 10px;
+        width: 55px;
+    }
+    .earth .barreContener:nth-child(1) .barre:nth-child(2), .earth .barreContener:nth-child(3) .barre:nth-child(2){
+        width: 55px;
+    }
+
+</style>
+<body>
+    <div class="contener">
+        <div class="water">
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+        </div>
+        <div class="fire">
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+        </div>
+        
+        <div class="wind">
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+        </div>
+        <div class="earth">
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <div class="barreContener">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+        </div>
+
+        <div class="circle">
+            <div align="center">
+                <div class="yin"></div>
+            </div>
+            <div align="right">
+                <div class="feher"></div>
+            </div>
+            <div align="center">
+                <div class="yang"></div>
+            </div>
+
+            <div align="center">
+                <div class="p-black"></div>
+                <div class="p-white"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
